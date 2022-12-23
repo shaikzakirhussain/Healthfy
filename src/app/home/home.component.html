@@ -1,0 +1,140 @@
+<!-- nav bar-->
+<nav class="navbar navbar-expand-lg" style="background-color: #42a2f3;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav"  >
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" style="color: white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white">Wishlist</a>
+        </li>
+        
+        <li class="nav-item">
+          <button type="button" class="btn btn-info" style="border-color: white; color: white; font-weight: bold;">Login</button>
+        </li>
+      </ul>
+      <!-- <form class="d-flex" role="search"> 
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
+
+<!-- title & search  -->
+
+<div id="searchSection">
+
+  <div class="row">
+    <div id="Title-alg" class="col">
+      <h2 id="Title">{{eshopTitle}}</h2>
+      <span id="tagline">PHARMACY STORE</span>
+    </div>
+    <div class="col" id="searchCnt">
+      <input type="search" id="srch-input">
+      <button id="srch-btn"><i class="bi bi-search" style="color: white;"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- carousel -->
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets\meds1.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+
+      <div id="quatation-one"> 
+        <h5 style="padding-top: 40px; margin-left: 20px; color: white;">WE ARE HERE TO HELP</h5>
+        <p style="margin-left: 20px; color: white">To make your have a Beauty and Healthy life, And dream about the perfect one</p>
+        <button id="abtus-btn"><a href="#" id="abtus-link">About Us</a></button>
+      </div>
+      
+
+    </div>
+    <div class="carousel-item">
+      <img src="assets\meds3.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+
+      <div id="quatation-two"> 
+        <h5 style="padding-top: 40px; margin-left: 20px; color: white;">WE ARE HERE TO HELP</h5>
+        <p style="margin-left: 20px; color: white">If you don’t recognize an ingredient, your body won’t either.</p>
+        <button id="abtus-btn"><a href="#" id="abtus-link">About Us</a></button>
+      </div>
+      
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- service card -->
+
+<div class="container" id="service-card">
+  <div class="row row-cols-1 row-cols-md-3 g-3 m-3">
+    <div class="col">
+      <div class="card h-100" id="src-crd-one">
+        <div class="card-body">
+          <i class="bi bi-headset" id="src-icn"></i>
+          <h5 class="card-title" style="padding-top: 20px;">PREMIUM SUPPORT</h5>
+          <P class="card-text">We provide 24x7 support with expert advice at your door</P>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" id="src-crd-two">
+        <div class="card-body">
+          <i class="bi bi-car-front-fill" id="src-icn"></i>
+          <h5 class="card-title" style="padding-top: 20px;">DELIVERY WORLDWIDE</h5>
+          <P class="card-text">Any place or any continent we are here to deliver our products in a snap  </P>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" id="src-crd-three">
+        <div class="card-body">
+          <i class="bi bi-gift-fill" id="src-icn"></i>
+          <h5 class="card-title" style="padding-top: 20px;">100% CERTIFICATED</h5>
+          <P class="card-text">More than 100 certified Doc's ready to cure you </P>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="container m-5">
+  <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 33px;">POPULAR IN STORE</h3>
+
+  <div id="product-nav">
+    <div class="row">
+      <div class="col-1">
+        <button id="product-btn"><a href="beauty" id="product-ancor" target="_self">Beauty</a></button>
+      </div>
+      <div class="col-1">
+        <button id="product-btn"><a href="#" id="product-ancor">Fitness</a></button>
+      </div>
+      <div class="col-1">
+        <button id="product-btn"><a href="#" id="product-ancor">Vitamins</a></button>
+      </div>
+      <div class="col-1">
+        <button id="product-btn-spr"><a href="#"  id="product-ancor">Personal Care</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-beauty></app-beauty>

@@ -1,0 +1,27 @@
+#product-title{
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+#product-text{
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#selection-btn{
+    border: none;
+    position: fixed;
+    bottom: 380px;
+    
+}
+#prcTwo{
+    margin-left: -80px;
+}
+#addCartBtn{
+    width: 110px;
+    height: 30px;
+    border-radius: 18px;
+    border: none;
+    background-color: #42a2f3;
+    color: white;
+   
+}

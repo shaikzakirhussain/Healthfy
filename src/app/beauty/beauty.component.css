@@ -1,0 +1,32 @@
+#product-img{
+    background-color: transparent;
+    width: 240px;
+    height: 200px;
+ 
+}
+#product-img:hover{
+    filter: brightness(80%);
+}
+#quickView-Btn{
+    width: 120px;
+    height: 35px;
+    font-size: 13px;
+    border: 0.5px solid black;
+    font-weight: bold;
+    border-radius: 16px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transition: 0.8s;
+    display: none;
+}
+#showBtn:hover #quickView-Btn{
+    display: block;
+}
+#quickView-Btn:hover  #product-img{
+    filter: brightness(80%);
+}
+.allProducts{
+    margin-left: 280px;
+}

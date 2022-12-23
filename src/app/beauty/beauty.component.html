@@ -1,0 +1,44 @@
+
+
+    <div class="allProducts">
+
+      <div class="row row-cols-1 row-cols-lg-5 g-2">
+        <div *ngFor="let prd of products">
+          <div class="col">
+            <div class="card" style="width: 18rem; border: none;">
+              <div id="showBtn">
+                  <img [src]="prd.productImage" class="card-img-top" alt="..." id="product-img">
+                      <button id="quickView-Btn" (click)="openDialog()">Quick View</button>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">
+                          <a href="#">{{prd.name}}</a>
+                      </p>
+                      <h3 class="card-title">{{prd.price}}</h3>
+                  </div>
+              </div>
+          </div>    
+         </div>
+        </div>
+      
+      
+        <div class="row row-cols-1 row-cols-lg-5 g-2">
+          <div *ngFor="let prd of productstwo">
+            <div class="col">
+              <div class="card" style="width: 18rem; border: none;">
+                <div id="showBtn">
+                    <img [src]="prd.productImage" class="card-img-top" alt="..." id="product-img">
+                        <button id="quickView-Btn" (click)="openDialog()">Quick View</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <a href="#">{{prd.name}}</a>
+                        </p>
+                        <h3 class="card-title">{{prd.price}}</h3>
+                    </div>
+                </div>
+            </div>    
+           </div>
+          </div>
+          
+    </div>

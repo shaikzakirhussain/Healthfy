@@ -1,0 +1,23 @@
+<div id="pop-cnt">
+    <div class="row">
+        <div class="col">
+            <img src="assets\beauty-5.webp" alt="" style="width: 300px; height: 300px;"></div>
+            <div class="col">
+                <h1 id="product-title">OIL FREE ADVANCE ACNE FACE WASH</h1>
+                <p id="product-text">For Dry, Even Sensitive Skin An effective yet extra gentle
+                    cleanser to fully remove makeup, dirt, impurities and SPF to soften skin while
+                    cleansing.</p>
+                <button id="addCartBtn">ADD TO CART</button>
+            </div>
+            <div class="col-1">
+                <h3 *ngIf="priceOne">$40</h3>
+                <button (click)="selectionOne()" id="selection-btn" value="40">5mg</button>
+
+            </div>
+            <div class="col-1">
+                <h3 *ngIf="priceTwo" id="prcTwo">$80</h3>
+                <button (click)="selectionTwo()" id="selection-btn">10mg</button>
+            </div>
+
+        </div>
+    </div>
